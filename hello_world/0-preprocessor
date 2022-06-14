@@ -1,4 +1,2 @@
 #!/bin/bash
-#task0
-
 gcc -E $CFILE > c
