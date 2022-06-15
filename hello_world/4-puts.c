@@ -1,8 +1,18 @@
 #include <stdio.h>
 
-int main(void){
+/**
+ * main - name of funtion
+ * puts - name of commant
+ * Return: value of funtion 'main'
+*/
 
-char cadena [] = "\"Programming is like building a multilingual puzzle";
-puts (cadena);
-return 0;
+int main(void)
+{
+
+	char cadena[] = "\"Programming is like building a multilingual puzzle";
+
+	puts(cadena);
+
+	return (0);
 }
+
