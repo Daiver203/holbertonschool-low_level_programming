@@ -16,7 +16,7 @@ int main(void)
 		putchar(number_base16);
 	}
 
-	for (base_16 = 65; base_16 <= 70; base_16++)
+	for (base_16 = 97; base_16 <= 102; base_16++)
 	{
 		putchar(base_16);
 	}
