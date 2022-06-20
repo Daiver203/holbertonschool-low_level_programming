@@ -1,34 +1,40 @@
 #include <stdio.h>
 /**
  * main - name of the funtion
- * Return: value 0;
+ * Return: value of funtion 'main'
 */
-
-int main()
+int main(void)
 {
-	int num = 0;
-	int num2 = 0;
+	int number_a = 48, number_b = 48, number_c, number_d;
+	int Space = 32, Comma = 44, new_line = 10;
 
-	for (num = 0; num <= 99; num++)
+	while (number_a < 58)
 	{
-
-		for (num2 = 0; num2 <= 99; num2++)
+		while (number_b < 58)
 		{
-			if (num < num2) 
-			{
-				putchar('0' + num / 10);
-				putchar('0' + num % 10);
-				putchar(' ');
+			number_d = number_b + 1;
+			number_c = number_a;
 
-				putchar('0' + num2 / 10);
-				putchar('0' + num2 % 10);
-				if (num !=98 || num2 != 99)
+			while (number_c < 58)
+			{
+				while (number_d < 58)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(number_a);
+					putchar(number_b);
+					putchar(Space);
+					putchar(number_c);
+					putchar(number_d);
+					if (number_a < 57 || number_b < 56 || number_c < 57 || number_d < 57)
+					{
+						putchar(Comma);
+						putchar(Space);
+					} number_d++;
 				}
-			}
+			number_d = 48;
+			number_c++;
+			} number_b++;
 		}
-	}
+	number_a++;
+	} putchar(new_line);
 	return (0);
 }
