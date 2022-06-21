@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 
-int print(void);
-
+void print_alphabet(void);
 
 #endif
