@@ -3,19 +3,19 @@
  * times_table - name of the function
  * Return: always zero
 */
-
 void times_table(void)
 {
 	int a;
-	int b;
-	int c = b * a;
 
 	for (a = 0; a < 10; a++)
 	{
+		int b;
+
 		for (b = 0; b < 10; b++)
 		{
-			if (b == 0)
-			else
+			int c = a * b;
+			
+			if (b == 0)  else
 			{
 			if (c / 10 != 0)
 			{
@@ -37,5 +37,5 @@ void times_table(void)
 			_putchar((c % 10) + '0');
 			}
 		} _putchar('\n');
-	}
-}
+	}	}
+
