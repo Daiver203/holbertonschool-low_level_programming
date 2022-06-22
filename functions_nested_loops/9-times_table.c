@@ -5,37 +5,36 @@
 */
 void times_table(void)
 {
-	int a;
+	int a = 0;
+	int b;
+	int table;
+	char new_line = '\n';
 
-	for (a = 0; a < 10; a++)
+	while (a < 10)
 	{
-		int b;
+		_putchar('0');
+		_putchar(',');
+		b = 1;
 
-		for (b = 0; b < 10; b++)
+		while (b < 10)
 		{
-			int c = a * b;
-			
-			if (b == 0)  else
+			table = a * b;
+			if (table >= 10)
 			{
-			if (c / 10 != 0)
-			{
-				_putchar(44);
 				_putchar(' ');
+				_putchar((table / 10) + '0');
+				_putchar((table % 10) + '0');
 			} else
 			{
-			_putchar(44);
-			_putchar(' ');
-			_putchar(' ');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(table + '0');
 			}
-			}
-			if (c / 10 == 0)
-			{
-				_putchar(c + '0');
-			} else
-			{
-			_putchar((c / 10) + '0');
-			_putchar((c % 10) + '0');
-			}
-		} _putchar('\n');
-	}	}
-
+			if (b < 9)
+				_putchar(',');
+				b++;
+		}
+		_putchar(new_line);
+		a++;
+	}
+}
