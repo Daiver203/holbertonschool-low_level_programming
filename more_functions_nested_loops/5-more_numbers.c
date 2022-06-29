@@ -24,5 +24,4 @@ void more_numbers(void)
 		count++;
 		putchar(new_line);
 	}
-	return (0);
 }
