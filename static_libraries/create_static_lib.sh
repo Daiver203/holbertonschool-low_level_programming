@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -fPIC -c *.c && ar rc liball.a *.o
+ar rcs liball.a *.o
