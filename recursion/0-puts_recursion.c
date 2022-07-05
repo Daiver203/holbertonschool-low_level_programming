@@ -8,6 +8,8 @@
 
 void _puts_recursion(char *s)
 {
+	char new_line = 10;
+
 	if (!s || !*s)
 	{
 		_putchar(new_line);
