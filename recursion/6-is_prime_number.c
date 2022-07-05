@@ -26,5 +26,5 @@ int _prim(int a, int n)
 	if (n == a)
 		return (1);
 
-	return (cal_prim(a + 1, n));
+	return (_prim(a + 1, n));
 }
