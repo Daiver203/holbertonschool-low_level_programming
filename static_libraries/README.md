@@ -1,0 +1,1 @@
+#static_libraries_is_fun
