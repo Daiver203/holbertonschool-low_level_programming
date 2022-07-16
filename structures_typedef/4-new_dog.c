@@ -41,22 +41,27 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *dog2;
 
 	if (!name || !owner || age < 0)
+	{
 		return (NULL);
+	}
 	dog2 = malloc(sizeof(dog_t));
 	if (!dog2)
+	{
 		return (NULL);
-
+	}
 	dog2->name = malloc(count(name) + 1);
 	if (!dog2->name)
+	{
 		free(dog2);
 		return (NULL);
-
+	}
 	dog2->owner = malloc(count(owner) + 1);
 	if (!dog2->owner)
+	{
 		free(dog2->name);
 		free(dog2);
 		return (NULL);
-
+	}
 	dog2->name = copy(dog2->name, name);
 	dog2->age = age;
 	dog2->owner = copy(dog2->owner, owner);
