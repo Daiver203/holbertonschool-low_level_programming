@@ -9,11 +9,11 @@ char *copy(char *str1, char *str2)
 {
 	int i;
 
-	for (i = 0; s2[i]; i++)
-		s1[i] = s2[i];
+	for (i = 0; str2[i]; i++)
+		str1[i] = str2[i];
 
-	s1[i] = '\0';
-	return (s1);
+	str1[i] = '\0';
+	return (str1);
 }
 /**
  * count - name of the function
