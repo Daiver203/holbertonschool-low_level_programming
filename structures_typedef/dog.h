@@ -2,7 +2,7 @@
 #define DOG_H
 
 /**
- * struct dog - name of structures
+ * truct dog - name of structures
  * @name: value of struct type 'char'
  * @age: value type integer
  * @owner: value of struct type 'char'
@@ -16,5 +16,6 @@ struct dog
 };
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 
 #endif
