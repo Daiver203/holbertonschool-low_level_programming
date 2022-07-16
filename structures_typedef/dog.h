@@ -1,5 +1,12 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef DOG_H
+#define DOG_H
+
+/**
+ * struct dog - name of structures
+ * @name: value of struct type 'char'
+ * @age: value type integer
+ * @owner: value of struct type 'char'
+*/
 
 struct dog
 {
@@ -7,6 +14,4 @@ struct dog
 	float age;
 	char *owner;
 };
-
-
 #endif
