@@ -27,7 +27,7 @@ int count(char *a)
 	for (j = 0; a[j]; j++)
 		;
 
-	return (a);
+	return (j);
 }
 /**
  * new_dog - name of the function
@@ -57,8 +57,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(dog2);
 		return (NULL);
 
-	dog2->name = cpystr(dog2->name, name);
+	dog2->name = copy(dog2->name, name);
 	dog2->age = age;
-	dog2->owner = cpystr(dog2->owner, owner);
+	dog2->owner = copy(dog2->owner, owner);
 	return (dog2);
 }
