@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
- * truct dog - name of structures
+ * struct dog - name of structures
  * @name: value of struct type 'char'
  * @age: value type integer
  * @owner: value of struct type 'char'
