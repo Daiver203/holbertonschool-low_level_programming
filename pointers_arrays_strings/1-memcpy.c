@@ -1,23 +1,19 @@
 #include "main.h"
 
 /**
- * _strchr - name of the function
- * @s: pointer to string
- * @c: character to compare in s
- * Return: when have a equal caracter return the location of this
+ * _memcpy - name of the function
+ * @dest: dest of src
+ * @src: source to copy to dest
+ * @n: number of changes of src to dest
+ * Return: dest
 */
 
-char *_strchr(char *s, char c)
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int a = 0;
+	unsigned int a;
 
-	for (; *(s + a) != '\0'; a++)
-	{
-		if (*(s + a) == c)
-			return (s + a);
-	}
-	if (*(s + a) == c)
-		return (s + a);
+	for (a = 0; a < n; a++)
+		*(dest + a) = *(src + a);
 
-	return ('\0');
+	return (dest);
 }
