@@ -9,16 +9,21 @@
 char *leet(char *a)
 {
 	int b = 0, c;
-	char value[] =  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char ret[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char value[] =  "aAeEoOtTlL";
+	char ret[] = "4433007711";
 
-	for (; a[b] != '\0'; b++)
+	while (a[b] != '\0')
 	{
-		for (c = 0; c <= 51; c++)
+		c = 0;
+		while (value[c] != '\0')
 		{
-			if (value[c] == a[b])
+			if (a[b] == value[c])
+			{
 				a[b] = ret[c];
+			}
+			c++;
 		}
+		b++;
 	}
 	return (a);
 }
