@@ -17,7 +17,7 @@ char *leet(char *a)
 		for (c = 0; c <= 51; c++)
 		{
 			if (value[c] == a[b])
-			a[b] = ret[c];
+				a[b] = ret[c];
 		}
 	}
 	return (a);
